@@ -1,0 +1,12 @@
+.nav-name{
+
+   display: flex;
+   align-items: center;
+   gap: 5px;
+
+}
+.navbar{
+
+    padding: 20px;
+
+}
