@@ -40,3 +40,20 @@
     padding: 20px;
 
 }
+.text-w{
+
+   color: black;
+   font-size: 25px;
+
+}
+.text-c{
+   
+   color: green;
+
+}
+.deep-text{
+
+    background-color: rgba(0, 27, 177, 0.685);
+    color: white;
+
+}

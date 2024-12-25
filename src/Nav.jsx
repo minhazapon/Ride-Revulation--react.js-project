@@ -1,8 +1,19 @@
+import { NavLink } from "react-router-dom";
 
 
 
 
 const Nav = () => {
+
+
+   const navZ = <>
+   
+    <li className=" deep "><NavLink to='/'>Home</NavLink></li>
+    <li className=" deep "><NavLink to='/apply'>Applied Jobs</NavLink></li>
+    <li className=" deep "><NavLink to='/blog'>Blogs</NavLink></li>
+   
+   
+   </>
 
 
 
@@ -29,40 +40,22 @@ const Nav = () => {
                   <ul
                     tabIndex={0}
                     className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <a>Parent</a>
-                      <ul className="p-2">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                      </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    {navZ}
                   </ul>
                 </div>
                 <div className=" nav-name ">
-                 <img className=" h-[50px] "  src="https://cdn-icons-png.flaticon.com/128/18378/18378349.png" alt="" />
-                 <a className=" text-xl deep ">WorkConnect</a>
+                 <img className=" h-[40px] "  src="https://cdn-icons-png.flaticon.com/128/18378/18378349.png" alt="" />
+                 <a className=" text-xl deep text-w ">Work<span className=" text-c ">Connect</span></a>
                 </div>
                 
               </div>
               <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <details>
-                      <summary>Parent</summary>
-                      <ul className="p-2">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                      </ul>
-                    </details>
-                  </li>
-                  <li><a>Item 3</a></li>
+                {navZ}
                 </ul>
               </div>
               <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn deep  deep-text ">Starting Apply</a>
               </div>
             </div>
             
