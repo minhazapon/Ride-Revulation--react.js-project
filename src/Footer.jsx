@@ -15,16 +15,16 @@ const Footer = () => {
         <div className=" mt-20 bg-black p-10 text-white ">
         <div className=" ml-20 mr-20 ">
         <div className="  ">
-        <div className=" flex justify-between">  
+        <div className=" flex-col md:flex-row lg:flex-row flex justify-between gap-10">  
         <div>
         <div>
         <a className=" text-xl deep text-w ">Work<span className=" text-c ">Connect</span></a>
         <p className=" text-there deep ">There are many variations of passages of<br></br> Lorem Ipsum , but the majority have<br></br> suffered alteration in some form.</p>
         </div>
         <div className=" mt-4 flex items-center gap-3 ">
-        <p><IoLogoFacebook className=" icon-F h-[30px] w-[30px] "></IoLogoFacebook></p>
-        <p><FaTwitter className=" icon-t h-[30px] w-[30px] "></FaTwitter></p>
-        <p><FaInstagramSquare className=" icon-I h-[30px] w-[30px] "></FaInstagramSquare></p>
+        <p><IoLogoFacebook className=" text-white h-[30px] w-[30px] "></IoLogoFacebook></p>
+        <p><FaTwitter className=" text-white h-[30px] w-[30px] "></FaTwitter></p>
+        <p><FaInstagramSquare className=" text-white h-[30px] w-[30px] "></FaInstagramSquare></p>
         </div>
         </div>
         <div>
@@ -57,7 +57,7 @@ const Footer = () => {
         <div className=" hr ">
         <hr></hr>
         </div>
-        <div className=" flex justify-between ">
+        <div className=" flex-col md:flex-row lg:flex-row flex justify-between gap-10 ">
         <p className=" deep ar-text ">@2023 CareerHub. All Rights Reserved</p>
         <p className=" deep ar-text ">Powered by CareerHub</p>
         </div>
