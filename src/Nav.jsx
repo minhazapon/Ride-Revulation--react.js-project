@@ -18,10 +18,10 @@ const Nav = () => {
 
 
     return (
-        <div>
+        <div className="  ">
 
-            <div className=" navbar bg-base-100 shadow  ">
-              <div className="navbar-start">
+            <div className="   navbar bg-base-100 shadow  ">
+              <div className="   navbar-start">
                 <div className="dropdown">
                   <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                     <svg
@@ -45,7 +45,7 @@ const Nav = () => {
                 </div>
                 <div className=" nav-name ">
                  <img className=" h-[40px] "  src="https://cdn-icons-png.flaticon.com/128/18378/18378349.png" alt="" />
-                 <a className=" text-xl deep text-w ">Work<span className=" text-c ">Connect</span></a>
+                 <a className=" text-xl deep text-w1 ">Work<span className=" text-c ">Connect</span></a>
                 </div>
                 
               </div>
@@ -54,7 +54,7 @@ const Nav = () => {
                 {navZ}
                 </ul>
               </div>
-              <div className="navbar-end">
+              <div className=" navbar-end">
                 <a className="btn deep  deep-text ">Starting Apply</a>
               </div>
             </div>
