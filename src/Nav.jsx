@@ -9,7 +9,7 @@ const Nav = () => {
     return (
         <div>
 
-            <div className=" navbar bg-base-100 shadow-md  ">
+            <div className=" navbar bg-base-100 shadow  ">
               <div className="navbar-start">
                 <div className="dropdown">
                   <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,8 +41,8 @@ const Nav = () => {
                   </ul>
                 </div>
                 <div className=" nav-name ">
-                 <img className=" h-[50px] "  src="https://cdn-icons-gif.flaticon.com/10872/10872293.gif" alt="" />
-                 <a className=" text-xl">RideRevulation</a>
+                 <img className=" h-[50px] "  src="https://cdn-icons-png.flaticon.com/128/18378/18378349.png" alt="" />
+                 <a className=" text-xl deep ">WorkConnect</a>
                 </div>
                 
               </div>
