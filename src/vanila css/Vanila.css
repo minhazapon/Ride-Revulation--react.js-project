@@ -129,3 +129,16 @@
    color: blueviolet;
 
 }
+.one{
+
+   font-size: 60px;
+   line-height: 70px;
+   font-weight: bold;
+   color: black;
+
+}
+.background{
+
+   background-color: rgba(137, 43, 226, 0.089);
+
+}
