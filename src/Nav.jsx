@@ -9,7 +9,7 @@ const Nav = () => {
    const navZ = <>
    
     <li className=" deep "><NavLink to='/'>Home</NavLink></li>
-    <li className=" deep "><NavLink to='/apply'>Applied Jobs</NavLink></li>
+
    
    </>
 

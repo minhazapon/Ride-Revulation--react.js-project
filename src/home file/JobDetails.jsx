@@ -9,7 +9,8 @@ import { FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 
-
+import { ToastContainer, toast } from 'react-toastify';
+import { SaveJobApplication } from "../local/LocalStorage";
 
 const JobDetails = () => {
 
@@ -19,10 +20,14 @@ const JobDetails = () => {
     const job = AllJob.find( job => job.id === idInt ) ;
     console.log(job, id)
 
-    const {  logo, job_title, company_name, remote_or_onsite,
-             location, job_type, salary, job_description,
-             job_responsibility, educational_requirements ,
-             experiences , contact_information  }  = AllJob
+
+    const handleApply = () =>{
+       
+       SaveJobApplication(idInt);
+       toast('Job applied Successfully')
+
+    }
+
 
 
     return (
@@ -77,7 +82,8 @@ const JobDetails = () => {
             Dhaka, Bangladesh </p>
             </div>
             <div className=" flex justify-center ">
-            <button className=" w-full mt-6 btn bg-gradient-to-r from-violet-600 to-blue-800 text-white ">Apply Now</button>
+            <button onClick={handleApply} className=" w-full mt-6 btn bg-gradient-to-r from-violet-600 to-blue-800 text-white ">Apply Now</button>
+            <ToastContainer />
             </div>
             </div>
 
