@@ -35,8 +35,8 @@ const Featured = () => {
             }
             </div>
             <div className=" flex justify-center mt-10  ">
-            <div className={ DataLength === jobs.length && 'hidden' } >
-            <button onClick={() => setLength(jobs.length) } className=" w-full    btn bg-gradient-to-r from-violet-600 to-blue-800 text-white deep ">View All</button>
+            <div className={ DataLength === jobs.length && 'hidden' }  >
+            <button onClick={() => setLength(jobs.length) } className="btn bg-gradient-to-r from-violet-600 to-blue-800 text-white deep ">View All</button>
             </div>   
             </div>
             </div>

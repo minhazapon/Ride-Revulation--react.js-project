@@ -1,6 +1,7 @@
 
 import { CiLocationOn } from "react-icons/ci";
 import { CiDollar } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const FeaturedDetails = ({jobs}) => {
     
@@ -29,7 +30,9 @@ const FeaturedDetails = ({jobs}) => {
               </div>
              </div>
              <div>
+             <Link to={`/job/${id}`}>
              <button className=" mt-5 bg-violet-600 btn text-white deep ">View Details</button>
+             </Link>  
              </div>
 
 

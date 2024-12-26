@@ -8,11 +8,7 @@ const Banner = () => {
 
     return (
         <div className=" mb-20 background ">
-
-
         <div className=" ml-20 mr-20 p-10 ">
-             
-
         <div className=" mt-28  ">
         <div className=" flex-col md:flex-row lg:flex-row flex justify-between items-center gap-10 ">
         <div>
@@ -23,13 +19,7 @@ const Banner = () => {
         </div>
         </div>
         </div>
-            
-        
         </div>    
-
-         
-         
-            
         </div>
     );
 };

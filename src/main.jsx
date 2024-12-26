@@ -10,6 +10,7 @@ import {
 import Root from './Root';
 import Home from './Home';
 import './vanila css/Vanila.css'
+import JobDetails from './home file/JobDetails';
 
 
 const router = createBrowserRouter([
@@ -19,7 +20,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element:  <Home></Home>   ,
+        element:  <Home></Home> ,
+      },
+      {
+        path: "/job/:id",
+        element: <JobDetails></JobDetails>,
+        loader: () => fetch('../jobs.json')
       },
     ],
   },
