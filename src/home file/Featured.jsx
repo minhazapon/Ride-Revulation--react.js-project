@@ -8,6 +8,8 @@ const Featured = () => {
 
     const [jobs, setJobs] = useState([])
 
+    const [DataLength, setLength] = useState(4)
+
     useEffect( () => {
     fetch('jobs.json')
     .then( res => res.json())
@@ -29,8 +31,13 @@ const Featured = () => {
             <div className=" mt-16 ">
             <div className=" grid  md:grid-cols-2 gap-5 ">
             {
-            jobs.map( jobs => <FeaturedDetails jobs={jobs}></FeaturedDetails>  )
+            jobs.slice(0, DataLength).map( jobs => <FeaturedDetails key={jobs.id} jobs={jobs}></FeaturedDetails>  )
             }
+            </div>
+            <div className=" flex justify-center mt-10  ">
+            <div className={ DataLength === jobs.length && 'hidden' } >
+            <button onClick={() => setLength(jobs.length) } className=" w-full    btn bg-gradient-to-r from-violet-600 to-blue-800 text-white deep ">View All</button>
+            </div>   
             </div>
             </div>
             </div>

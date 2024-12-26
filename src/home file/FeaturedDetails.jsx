@@ -20,11 +20,11 @@ const FeaturedDetails = ({jobs}) => {
              </div>
              <div className=" mt-5 flex-col md:flex-row lg:flex-row flex justify-between gap-5 ">
               <div className=" flex items-center gap-1">
-              <p><CiLocationOn className=" h-[20px] w-[20px] "></CiLocationOn></p>
+              <p><CiLocationOn className=" text-gray-400 h-[20px] w-[20px] "></CiLocationOn></p>
               <p className=" text-gray-400 ">Dhaka, Bangladesh</p>
               </div>
               <div className=" flex items-center gap-1">
-              <p><CiDollar className=" h-[20px] w-[20px] "></CiDollar></p>
+              <p><CiDollar className=" text-gray-400 h-[20px] w-[20px] "></CiDollar></p>
               <p className=" text-gray-400 ">Salary : 100K - 150K</p>
               </div>
              </div>
